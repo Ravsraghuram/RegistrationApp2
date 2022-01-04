@@ -1,0 +1,26 @@
+<p>
+    <a [routerLink]="['/register-form']">RegistrationForm</a>
+</p>
+
+<table class='table' *ngIf="RegList">
+    <thead>
+        <tr>
+           
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Gender</th>
+            <th>Phonenumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let reg of RegList">
+            
+            <td>{{ reg.Firstname }}</td>
+            <td>{{ reg.Lastname }}</td>
+            <td>{{ reg.Gender }}</td>
+            <td>{{ reg.Phonenumber }}</td>
+            <td>
+            
+        </tr>
+    </tbody>
+</table>

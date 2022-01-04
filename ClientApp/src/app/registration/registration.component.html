@@ -1,0 +1,34 @@
+{{title}}
+<form [formGroup]="RegForm">
+    <div class="form-group row">
+        <label class="control-label col-md-12">FirstName</label>
+        <div class="col-md-4">
+            <input type="text" formControlName="FirstName" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="control-label col-md-12">LastName</label>
+        <div class="col-md-4">
+            <input type="text" formControlName="LastName" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="control-label col-md-12">Gender</label>
+        <div class="col-md-2">
+            <select class="form-control" formControlName="Gender">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="control-label col-md-12">Phonenumber</label>
+        <div class="col-md-4">
+            <input type="text" formControlName="Phonenumber"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" (click)="Register()">Register</button>
+    </div>
+</form>
